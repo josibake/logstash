@@ -5,12 +5,12 @@
 #
 
 # Pull base image
-FROM dockerize/java:1.7
+FROM dockerize/java
 
 MAINTAINER Dockerize "http://dockerize.github.io"
 
 # Install Logstash
-ENV VERSION 1.4.2
+ENV VERSION 1.5.3
 ENV FILE logstash-$VERSION.tar.gz
 
 RUN wget -nv -O /tmp/$FILE https://download.elasticsearch.org/logstash/logstash/$FILE
