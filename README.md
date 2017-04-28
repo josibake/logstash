@@ -33,5 +33,5 @@ docker run -d -v <data-dir>:/data dockerize/logstash
 1. Start a container by mounting data directory and specifying the custom configuration file:
 
 ```
-docker run -d -v <data-dir>:/data doockerize/logstash /logstash/bin/logstash agent -f <logstash.conf>
+docker run -d -v <data-dir>:/data dockerize/logstash /logstash/bin/logstash agent -f <logstash.conf>
 ```
